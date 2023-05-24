@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import TeamCard from './TeamCard';
+import axios from 'axios';
 
 const Dashboard = () => {
   const teams = [
@@ -47,18 +48,28 @@ const Dashboard = () => {
     },
   ]
 
+  const MINUTE_MS = 300000;
 
-  const MINUTE_MS = 60000;
+  const queryApi = () => {
+    const response = axios.post(
+      `/api/hook`,
+      {
+        centsAmount: "10100",
+        currencyCode: "zar",
+        merchantCode: 7996,
+        merchantName: "USkaka",
+        merchantCity: "Durban",
+        countryCode: "ZA"
+      }
+    )
+    console.log(response);
+  }
 
-  // const queryApi = () => {
-  //   console.log('queryApi');
-  // }
+  useEffect(() => {
+    queryApi();
+  }, []);
 
-  // useEffect(() => {
-  //   queryApi();
-  // }, []);
-
-  // setInterval(queryApi, MINUTE_MS);
+  setInterval(queryApi, MINUTE_MS);
 
   return ( <>
     <div className="relative">
