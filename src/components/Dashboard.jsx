@@ -8,43 +8,50 @@ const Dashboard = () => {
       name: 'Catch Me If You Can',
       firstChallenge: false,
       secondChallenge: false,
-      thirdChallenge: false
+      thirdChallenge: false,
+      fourthChallenge: false
     },
     {
       name: 'Hackberry Fin',
       firstChallenge: true,
       secondChallenge: false,
-      thirdChallenge: false
+      thirdChallenge: false,
+      fourthChallenge: false
     },
     {
       name: 'The Solo No Hopes',
       firstChallenge: true,
       secondChallenge: false,
-      thirdChallenge: true
+      thirdChallenge: true,
+      fourthChallenge: false
     },
     {
       name: 'Obi One Challenge',
       firstChallenge: false,
       secondChallenge: false,
-      thirdChallenge: true
+      thirdChallenge: true,
+      fourthChallenge: false
     },
     {
       name: 'Obi One Challenge',
       firstChallenge: false,
       secondChallenge: false,
-      thirdChallenge: true
+      thirdChallenge: true,
+      fourthChallenge: false
     },
     {
       name: 'Obi One Challenge',
       firstChallenge: false,
       secondChallenge: false,
-      thirdChallenge: true
+      thirdChallenge: true,
+      fourthChallenge: false
     },
     {
       name: 'Obi One Challenge',
       firstChallenge: false,
       secondChallenge: false,
-      thirdChallenge: true
+      thirdChallenge: true,
+      fourthChallenge: false
     },
   ]
 
