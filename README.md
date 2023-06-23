@@ -1,4 +1,4 @@
-##  🚩 Capture The Flag Dashboard
+#  🚩 A Simple Capture The Flag Dashboard
 
 Welcome to the simple leaderboard component of our Programmable Banking Card Capture the Flag Challenge! This is where you can see how you stack up against the competition.
 
