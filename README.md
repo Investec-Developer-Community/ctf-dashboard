@@ -2,6 +2,8 @@
 
 Simple dashboard which can be used for a Capture Flag Challenge
 
+![Dashboard](/docs/ctf-readme.png)
+
 ## Dependencies
 
 - You would need to create a [Firebase account](https://firebase.google.com/docs/hosting/frameworks/nextjs)
