@@ -2,6 +2,13 @@
 
 Welcome to the simple leaderboard component of our Programmable Banking Card Capture the Flag Challenge! This is where you can see how you stack up against the competition.
 
+![Dashboard](/docs/ctf-readme.png)
+
+## Dependencies
+
+- You would need to create a [Firebase account](https://firebase.google.com/docs/hosting/frameworks/nextjs)
+- You can edit the `const answers` variable in the `TeamCard.jsx` file with your specific answers
+
 ## 🌐 Overview
 The leaderboard is a crucial part of our game, providing a real-time ranking of all participating teams. It's all about friendly competition and seeing who can solve the puzzles the fastest!
 
@@ -20,11 +27,12 @@ npm install
 npm run dev
 ```
 
+** Update the .env.example file to just .env and update with your own values from Firebase**
+
+```bash
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 🎮 Play the Game
-
-Ready to put your skills to the test? Head over to the [Capture the Flag Challenge](https://coda.io/@programmble-banking/capture-the-flag-challenge-team) and start your adventure!
 
 ## 🍴 Fork the Repo
 
