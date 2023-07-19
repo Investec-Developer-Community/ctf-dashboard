@@ -27,7 +27,7 @@ npm install
 npm run dev
 ```
 
-** Update the .env.example file to just .env and update with your own values from Firebase**
+**Update the .env.example file to just .env and update with your own values from Firebase**
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
