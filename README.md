@@ -15,7 +15,7 @@ The leaderboard is a crucial part of our game, providing a real-time ranking of 
 ## 🛠️ How it Works
 Each time a team captures a flag, their score is updated on the leaderboard. The faster you solve the puzzles, the higher you'll climb!
 
-**TODO**: - [ ] The leaderboard is updated in real-time as teams progress through the game. 
+A team will submit their challenge or answers to the endpoint which will push them to the Firebase collection and then update the Dashboard
 
 ## 🚀 Getting Started
 
