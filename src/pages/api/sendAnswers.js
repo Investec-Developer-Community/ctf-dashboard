@@ -11,6 +11,7 @@ const sendAnswersHandler = async (req, res) => {
       answerOne:    req.body.answerOne,
       answerTwo:    req.body.answerTwo,
       answerThree:  req.body.answerThree,
+      answerFour:   req.body.answerFour,
     })
 
     res.status(200).json({ message: "submitted" });

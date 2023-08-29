@@ -5,6 +5,7 @@ const TeamCard = ({ team }) => {
     answerOne:    'A',
     answerTwo:    'B',
     answerThree:  'C',
+    answerFour:   'D',
   }
 
   const challengeIcon = (teamAnswer, actualAnswer) => {
@@ -40,6 +41,13 @@ const TeamCard = ({ team }) => {
             <div className="flex w-0 flex-1">
               <div className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm font-semibold text-gray-900">
                 {challengeIcon(team.answerThree, answers.answerThree)}
+              </div>
+            </div>
+          </div>
+          <div className="-ml-px flex w-0 flex-1">
+            <div className="flex w-0 flex-1">
+              <div className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm font-semibold text-gray-900">
+                {challengeIcon(team.answerFour, answers.answerFour)}
               </div>
             </div>
           </div>
