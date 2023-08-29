@@ -12,7 +12,7 @@ const sendAnswersHandler = async (req, res) => {
       answerThree:  req.body.answerThree,
     })
 
-    res.status(response.status);
+    res.status(200).json({ message: "submitted" });
   }
 }
 
