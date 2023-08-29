@@ -6,6 +6,7 @@ const sendAnswersHandler = async (req, res) => {
 
   if (req.method === 'POST') {
     addDoc(dbInstance, {
+      timeStamp:    Date.now(),
       teamName:     req.body.teamName,
       answerOne:    req.body.answerOne,
       answerTwo:    req.body.answerTwo,
