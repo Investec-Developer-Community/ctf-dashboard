@@ -2,10 +2,10 @@ import { CheckCircleIcon, XCircleIcon } from '@heroicons/react/20/solid'
 
 const TeamCard = ({ team }) => {
   const answers = {
-    answerOne:    'A',
-    answerTwo:    'B',
-    answerThree:  'C',
-    answerFour:   'D',
+    answerOne:    'Disorder31082023',
+    answerTwo:    '7372',
+    answerThree:  '4816',
+    answerFour:   'jpn',
   }
 
   const challengeIcon = (teamAnswer, actualAnswer) => {
