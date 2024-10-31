@@ -1,23 +1,22 @@
-import { database } from '../../firebaseConfig';
-import { getFirestore, doc, getDocs, collection  } from 'firebase/firestore';
+import { drizzle } from 'drizzle-orm/libsql';
+import { teamsTable } from '../../db/schema';
+const db = drizzle(process.env.DB_FILE_NAME!);
 
 const getResultsHandler = async (req, res) => {
-  const db = getFirestore();
-  const colRef = collection(db, 'capture-the-flag');
 
   if (req.method === 'GET') {
-    const docsSnap = await getDocs(colRef);
+    const teams = await db.select().from(teamsTable);
     let responseData = [];
     let sample = [];
-    docsSnap.forEach(doc => {
-        let timeStamp = doc.get('timeStamp');
-        let teamName = doc.get('teamName');
+    teams.forEach(team => {
+        let timeStamp = team.timestamp;
+        let teamName = team.team_name;
         if (timeStamp && teamName) {
             if (!sample[teamName]) {
-                sample[teamName] = doc.data();
+                sample[teamName] = team;
             } else {
                 if (sample[teamName].timeStamp < timeStamp) {
-                    sample[teamName] = doc.data();
+                    sample[teamName] = team;
                 }
             }
         }
@@ -27,7 +26,7 @@ const getResultsHandler = async (req, res) => {
     for (let key in sample) {
         responseData.push(sample[key]);
     }
-    // responseData.push(doc.data());
+
     res.json(responseData);
   }
 }
