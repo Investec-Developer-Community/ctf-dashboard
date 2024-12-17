@@ -6,7 +6,6 @@ Welcome to the simple leaderboard component of our [Programmable Banking Card Ca
 
 ## Dependencies
 
-- You would need to create a [Firebase account](https://firebase.google.com/docs/hosting/frameworks/nextjs)
 - You can edit the `const answers` variable in the `TeamCard.jsx` file with your specific answers
 
 ## 🌐 Overview
